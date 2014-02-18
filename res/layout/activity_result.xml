@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ResultActivity" >
+    
+    <TableLayout
+        android:id="@+id/table_Result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/table_Result_Row_Winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+                android:id="@+id/textView_Result_fill1"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/textView_Result_fill2"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView_Result_Winner"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txt_Result_Winner"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_Result_Row_Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+		        android:id="@+id/textView_Result_Top"
+		        android:textStyle="bold"
+		        android:layout_gravity="start"
+		        android:text="@string/txt_TB_top" />
+            <TextView
+		        android:id="@+id/textView_Result_VSTop"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            <TextView
+		        android:id="@+id/textView_Result_wTop"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_Result_Row_JG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+		        android:id="@+id/textView_Result_JG"
+		        android:textStyle="bold"
+		        android:layout_gravity="start"
+		        android:text="@string/txt_TB_jg" />
+            <TextView
+		        android:id="@+id/textView_Result_VSJG"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            <TextView
+		        android:id="@+id/textView_Result_wJG"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_Result_Row_Mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+		        android:id="@+id/textView_Result_MID"
+		        android:textStyle="bold"
+		        android:layout_gravity="start"
+		        android:text="@string/txt_TB_mid" />
+            <TextView
+		        android:id="@+id/textView_Result_VSMid"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            <TextView
+		        android:id="@+id/textView_Result_wMid"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/table_Result_Row_Supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+		        android:id="@+id/textView_Result_Supp"
+		        android:textStyle="bold"
+		        android:layout_gravity="start"
+		        android:text="@string/txt_TB_supp" />
+            <TextView
+		        android:id="@+id/textView_Result_VSSupp"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            <TextView
+		        android:id="@+id/textView_Result_wSupp"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/table_Result_Row_ADC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+            
+            <TextView
+		        android:id="@+id/textView_Result_ADC"
+		        android:textStyle="bold"
+		        android:layout_gravity="start"
+		        android:text="@string/txt_TB_adc" />
+            <TextView
+		        android:id="@+id/textView_Result_VSADC"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            <TextView
+		        android:id="@+id/textView_Result_wADC"
+		        android:layout_gravity="center_horizontal"
+		        android:text="" />
+            
+        </TableRow>
+	</TableLayout>
+	
+    <ScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="vertical"
+		android:layout_below="@+id/table_Result"
+		android:layout_above="@+id/button_Result_Back"
+		android:layout_marginBottom="5dp" >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView_Result_TeamComposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="@string/txt_Result_TC" />
+		<View
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/holo_blue_dark"/>
+        <TextView
+            android:id="@+id/textView_Result_TC_SkEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Ex" />
+        <TextView
+            android:id="@+id/textView_Result_TC_SkGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Go" />
+        <TextView
+            android:id="@+id/textView_Result_TC_SkBa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Ba" />
+        
+        <TextView
+            android:id="@+id/textView_Result_TeamComposition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="@string/txt_Result_TC2" />
+        <View
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/holo_purple"/>
+        <TextView
+            android:id="@+id/textView_Result_TC_SkEx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Ex" />
+        <TextView
+            android:id="@+id/textView_Result_TC_SkGo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Go" />
+        <TextView
+            android:id="@+id/textView_Result_TC_SkBa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_Ba" />
+        
+        <TextView
+            android:id="@+id/textView_Result_TeamStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="@string/txt_Result_TC_Stats" />
+        <View
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/holo_blue_dark"/>
+        <TextView
+            android:id="@+id/textView_Result_TC_StAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsAD" />
+        <TextView
+            android:id="@+id/textView_Result_TC_StAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsAP" />
+		<TextView
+            android:id="@+id/textView_Result_TC_StHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsHP" />
+		<TextView
+            android:id="@+id/textView_Result_TC_StDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsDiff" />
+		
+		<TextView
+            android:id="@+id/textView_Result_TeamStats2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="@string/txt_Result_TC_Stats2" />
+		<View
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:background="@android:color/holo_purple"/>
+        <TextView
+            android:id="@+id/textView_Result_TC_StAD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsAD" />
+        <TextView
+            android:id="@+id/textView_Result_TC_StAP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsAP" />
+		<TextView
+            android:id="@+id/textView_Result_TC_StHP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsHP" />
+		<TextView
+            android:id="@+id/textView_Result_TC_StDiff2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_Result_TC_StatsDiff" />
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_Result_Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_Result_Back" />
+
+</RelativeLayout>

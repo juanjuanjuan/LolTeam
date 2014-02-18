@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <TextView
+        android:id="@+id/textViewTBTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_TB_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTBTitle"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textViewTBTeam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="@string/txt_TB_team1"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewTBTeam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="@string/txt_TB_team2"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textView_TB_Top1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_TB_top" />
+            <ImageButton
+                android:id="@+id/imageButton_TB_Top1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_top"
+                android:src="@drawable/none" />
+			<View
+			    android:layout_width="2dp"
+			    android:layout_height="fill_parent"
+			    android:background="@android:color/black"/>
+            <ImageButton
+                android:id="@+id/imageButton_TB_Top2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_top"
+                android:src="@drawable/none" />
+            <TextView
+                android:id="@+id/textView_TB_Top2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txt_TB_top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textView_TB_JG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_TB_jg" />
+            <ImageButton
+                android:id="@+id/imageButton_TB_JG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_jg"
+                android:src="@drawable/none" />
+            <View
+			    android:layout_width="2dp"
+			    android:layout_height="fill_parent"
+			    android:background="@android:color/black"/>
+            <ImageButton
+                android:id="@+id/imageButton_TB_JG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_jg"
+                android:src="@drawable/none" />
+            <TextView
+                android:id="@+id/textView_TB_JG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txt_TB_jg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textView_TB_Mid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_TB_mid" />
+            <ImageButton
+                android:id="@+id/imageButton_TB_Mid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_mid"
+                android:src="@drawable/none" />
+            <View
+			    android:layout_width="2dp"
+			    android:layout_height="fill_parent"
+			    android:background="@android:color/black"/>
+            <ImageButton
+                android:id="@+id/imageButton_TB_Mid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_mid"
+                android:src="@drawable/none" />
+            <TextView
+                android:id="@+id/textView_TB_Mid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txt_TB_mid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textView_TB_Supp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_TB_supp" />
+            <ImageButton
+                android:id="@+id/imageButton_TB_Supp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_supp"
+                android:src="@drawable/none" />
+            <View
+			    android:layout_width="2dp"
+			    android:layout_height="fill_parent"
+			    android:background="@android:color/black"/>
+            <ImageButton
+                android:id="@+id/imageButton_TB_Supp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_supp"
+                android:src="@drawable/none" />
+            <TextView
+                android:id="@+id/textView_TB_Supp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txt_TB_supp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textView_TB_ADC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_TB_adc" />
+            <ImageButton
+                android:id="@+id/imageButton_TB_ADC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_adc"
+                android:src="@drawable/none" />
+			<View
+			    android:layout_width="2dp"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/black"/>
+            <ImageButton
+                android:id="@+id/imageButton_TB_ADC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:contentDescription="@string/txt_TB_adc"
+                android:src="@drawable/none" />
+            <TextView
+                android:id="@+id/textView_TB_ADC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/txt_TB_adc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_TB_Calc" />
+
+</RelativeLayout>
