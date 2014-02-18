@@ -44,7 +44,6 @@ public class CounterList extends Activity {
 				irSelectChamp();
 			}
 		});
-		
 		btnBack.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
